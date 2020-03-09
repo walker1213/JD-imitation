@@ -1,0 +1,472 @@
+    /*
+* @Author: andy
+* @Date:   2017-12-13 11:22:37
+* @Last Modified by:   andy
+* @Last Modified time: 2017-12-13 11:22:37
+*/
+    /* 京东首页的css */
+    
+    .jd {
+        /* height: 480px; */
+        /* background-color: pink; */
+        position: relative;
+    }
+    
+    .jd-inner {
+        height: 480px;
+        /* background-color: skyblue; */
+        z-index: 999;
+        /* 只有定位的盒子才有 z-index */
+        position: relative;
+    }
+    
+    .ad {
+        height: 480px;
+        background: url(../images/bg.png.webp) no-repeat top center;
+        position: absolute;
+        /* 行内块转换 */
+        top: 0;
+        left: 0;
+        width: 100%;
+        /* 强制显示宽度 */
+    }
+    
+    .ad a {
+        display: block;
+        height: 100%;
+    }
+    /* 左侧栏开始 */
+    
+    .jd-clo1 {
+        width: 190px;
+        height: 460px;
+        background-color: #fff;
+        float: left;
+        padding-top: 10px;
+        margin-top: 10px;
+    }
+    
+    .jd-clo1 li {
+        padding-left: 10px;
+        height: 28px;
+        line-height: 28px;
+    }
+    
+    .jd-clo1 li:hover {
+        background-color: #999395;
+    }
+    
+    .jd-clo1 li a {
+        color: #000;
+        font-size: 14px;
+    }
+    
+    .jd-clo1 li span {
+        color: #000;
+        font-size: 12px;
+    }
+    /* 左侧栏的弹出窗口 */
+    
+    .jd-clo1 .menu {
+        display: none;
+        width: 1000px;
+        height: 450px;
+        left: 190px;
+        position: absolute;
+        top: 10px;
+        border: 1px solid #DDD;
+        z-index: 4;
+        background: white;
+        box-shadow: 0 0 8px #DDD;
+        padding: 20px 0 0;
+    }
+    
+    .jd-clo1 .lihover .menu {
+        display: block;
+    }
+    
+    .jd-clo1 .left-top {
+        padding-left: 50px;
+    }
+    
+    .jd-clo1 .left-top a {
+        height: 24px;
+        background-color: #333;
+        color: #fff;
+        padding: 2px 3px;
+        margin-right: 5px;
+        line-height: 24px;
+    }
+    
+    .jd-clo1 .left-top a:hover {
+        background-color: #C81633;
+        color: #fff;
+    }
+    
+    .jd-clo1 .left-top a span {
+        height: 24px;
+        color: #fff;
+        padding: 0 5px;
+        line-height: 24px;
+    }
+    
+    .left-bottom {
+        float: left;
+        width: 800px;
+        margin: 5px;
+        padding-bottom: 20px;
+        padding-left: 30px;
+    }
+    
+    .left-bottom dl {
+        display: block;
+        padding-bottom: 6px;
+        overflow: hidden;
+    }
+    
+    .left-bottom dl dt {
+        display: block;
+        float: left;
+        width: 80px;
+        text-align: right;
+        height: 16px;
+        line-height: 16px;
+        padding: 6px 8px;
+    }
+    
+    .left-bottom dl dt span {
+        padding: 3px;
+    }
+    
+    .left-bottom dl dt a {
+        font-weight: bold;
+        font-size: 10px;
+        padding: 6px;
+    }
+    
+    .left-bottom dl dt a:hover {
+        color: #f10215;
+    }
+    
+    .left-bottom dl dd {
+        display: block;
+        overflow: hidden;
+        float: left;
+    }
+    
+    .left-bottom dl dd a {
+        display: block;
+        float: left;
+        color: #737373;
+        font-size: 9pt;
+        padding: 6px 8px;
+        height: 16px;
+        line-height: 16px;
+    }
+    
+    .left-bottom dl dd a:hover {
+        color: #f10215;
+    }
+    
+    .jd-clo1 .right {
+        display: block;
+        width: 168px;
+        height: 420px;
+        float: right;
+        position: absolute;
+        padding: 20px 0 10px;
+        right: 5px;
+        top: 0;
+    }
+    
+    .jd-clo1 .right img {
+        margin-bottom: 15px;
+    }
+    /* 中间以及右侧栏开始 */
+    
+    .jd-clo2 {
+        width: 790px;
+        height: 480px;
+        float: left;
+        margin-left: 10px;
+    }
+    /* 中间栏开始 */
+    
+    .jd-clo2-left {
+        width: 590px;
+        height: 470px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        position: relative;
+        overflow: hidden;
+        display: inline-block;
+    }
+    
+    .jd-clo2-left .slider_list li {
+        position: absolute;
+        display: none;
+    }
+    
+    .jd-clo2-left .slider_list li:first-child {
+        display: block;
+    }
+    /* 右侧栏开始 */
+    
+    .jd-clo2-right {
+        width: 190px;
+        height: 470px;
+        display: inline-block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .jd-clo2-right div {
+        width: 190px;
+        height: 150px;
+        float: right;
+    }
+    
+    .jd-clo2-right div img {
+        width: 100%;
+    }
+    
+    .pic {
+        margin-bottom: 10px;
+    }
+    
+    .prev,
+    .next {
+        position: absolute;
+        top: 50%;
+        margin-top: -30px;
+        width: 30px;
+        height: 60px;
+        background: rgba(0, 0, 0, 0.3);
+        font-family: "icomoon";
+        color: #fff;
+        text-align: center;
+        line-height: 60px;
+        font-size: 25px;
+        z-index: 1;
+    }
+    
+    .prev {
+        left: 0;
+    }
+    
+    .next {
+        right: 0;
+    }
+    
+    .slider_icon {
+        z-index: 1;
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        margin-left: -90px;
+        width: 180px;
+        height: 20px;
+        background: rgba(255, 255, 255, 0);
+        border-radius: 10px;
+    }
+    
+    .slider_icon i {
+        width: 12px;
+        height: 12px;
+        background-color: #fff;
+        border-radius: 50%;
+        float: left;
+        margin: 4px 5px;
+        cursor: pointer;
+    }
+    
+    .slider_icon .btn_act {
+        background-color: #db192a;
+    }
+    
+    .jd-clo2-hd .current {
+        background-color: #f10215;
+    }
+    
+    .jd-clo3 {
+        width: 190px;
+        height: 480px;
+        float: right;
+    }
+    
+    .jd-clo3 a {
+        font-size: 12px;
+        color: #747474;
+    }
+    
+    .user {
+        height: 95px;
+        /* background-color: pink; */
+        padding: 20px 15px 0;
+    }
+    
+    .user-info {
+        height: 40px;
+        padding-left: 54px;
+        font-size: 12px;
+        color: #747474;
+        line-height: 22px;
+        position: relative;
+    }
+    
+    .user-info a {
+        font-size: 12px;
+        color: #747474;
+    }
+    
+    .user-info a:hover {
+        color: #f10215;
+    }
+    
+    .info-img {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    
+    .info-img img {
+        width: 100%;
+        height: auto;
+        /* 自动 跟随者宽度 一起缩放 */
+    }
+    
+    .user-profit {
+        margin-top: 14px;
+    }
+    
+    .user-profit a {
+        width: 70px;
+        height: 20px;
+        border-radius: 12px;
+        display: inline-block;
+        font-size: 12px;
+        text-align: center;
+        line-height: 20px;
+        margin: 0 1px;
+    }
+    
+    .user-profit .new-profit {
+        border: 2px solid #e1251b;
+        color: #fff;
+        background-color: #e1251b;
+    }
+    
+    .user-profit .plus-member {
+        border: 2px solid #000;
+        color: #e5d790;
+        background-color: #000;
+    }
+    
+    .user-profit a:hover {
+        background-color: #f10215;
+        color: #fff;
+    }
+    
+    .news {
+        height: 149px;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        padding: 5px 15px 0;
+    }
+    
+    .tab-hd {
+        padding: 3px 0;
+        position: relative;
+    }
+    
+    .tab-hd a {
+        margin: 0 4px;
+    }
+    
+    .jd-fast h5 {
+        display: inline-block;
+        font-size: 14px;
+        color: #333;
+    }
+    
+    .news .more1 {
+        position: absolute;
+        top: 6px;
+        right: 0;
+    }
+    
+    .tab-bd {
+        margin-top: 10px;
+    }
+    
+    .tab-bd li {
+        height: 23px;
+        line-height: 23px;
+    }
+    
+    .tab-bd li {
+        height: 16px;
+        line-height: 16px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        margin-bottom: 10px;
+    }
+    
+    .tab-bd .news_tag {
+        display: inline-block;
+        position: relative;
+        font-size: 12px;
+        height: 16px;
+        width: 35px;
+        line-height: 16px;
+        text-align: center;
+        vertical-align: 0;
+        color: #e1251b;
+        background-color: rgba(225, 37, 27, .08);
+        margin-right: 6px;
+    }
+    
+    .jd-service {
+        height: 209px;
+        /* background-color: skyblue; */
+        width: 190px;
+        overflow: hidden;
+    }
+    
+    .jd-service ul {
+        width: 195px;
+    }
+    
+    .jd-service li {
+        width: 47px;
+        height: 69px;
+        /* background-color: purple; */
+        float: left;
+        border-right: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+    }
+    
+    .jd-service li a {
+        width: 100%;
+        height: 100%;
+        /* 根据父亲 */
+        /* height: auto; 针对于自己的高度和宽度 */
+        display: block;
+    }
+    
+    .jd-service i {
+        display: block;
+        width: 24px;
+        height: 24px;
+        margin: 15px auto 8px;
+        background: url(../images/sprite_fs@1x.png) no-repeat;
+    }
+    
+    .jd-service p {
+        text-align: center;
+    }
