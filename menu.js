@@ -37,7 +37,7 @@ $(
 )
 window.onload = function() {
     // 编写JS代码
-    var lis = document.getElementsByTagName("li");
+    var lis = document.querySelectorAll(".jd-clo1 li")
     console.log(lis);
     for (var i = 0; i < lis.length; i++) {
         lis[i].onmouseover = function() {
