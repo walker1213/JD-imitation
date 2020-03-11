@@ -87,14 +87,15 @@ body {
     position: relative;
 }
 
-.J_event .w-left {
+.J_event .w .w-left {
     display: block;
     height: 80px;
     width: 190px;
     background: url(../images/top-left.jpg.webp) no-repeat;
-    position: absolute;
-    top: 0;
-    left: 356.5px;
+    /* float: left; */
+    /* position: absolute; */
+    /* top: 0;
+    left: 356.5px; */
 }
 
 .J_event .w i {

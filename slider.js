@@ -1,4 +1,5 @@
 $(function() {
+    //轮播图效果
     var count = 0;
     var $li = $(".jd-clo2-left>ul>li");
     $(".next").click(function() {
@@ -6,7 +7,9 @@ $(function() {
         if (count == $li.length) {
             count = 0;
         }
+        //对应元素渐入，兄弟元素渐出
         $li.eq(count).fadeIn().siblings().fadeOut();
+        //为下方icon添加类样式并删除其他icon的类样式
         $(".slider_icon i").eq(count).addClass("btn_act").siblings().removeClass('btn_act');
         console.log(count);
     });

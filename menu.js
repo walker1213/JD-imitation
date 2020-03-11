@@ -12,6 +12,7 @@ $(
             "overflow": "hidden",
             "border": "1px solid #E3E4E5",
         };
+        //注册移入移出事件
         $(".shortcut .fl .outer-first").mouseover(
             function() {
                 $(this).next().show();
@@ -36,10 +37,10 @@ $(
     }
 )
 window.onload = function() {
-    // 编写JS代码
     var lis = document.querySelectorAll(".jd-clo1 li")
     console.log(lis);
     for (var i = 0; i < lis.length; i++) {
+        //注册移入移出事件
         lis[i].onmouseover = function() {
             this.className = "lihover";
         }
